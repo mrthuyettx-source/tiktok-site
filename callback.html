@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TikTok Authorization Callback - Starlink Group TikTok App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      line-height: 1.6;
+      padding: 0 20px;
+      color: #111;
+    }
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    code {
+      background: #f3f3f3;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>TikTok Authorization Callback</h1>
+
+  <p>
+    This page receives the authorization code returned by TikTok Login Kit for Starlink Group TikTok App.
+  </p>
+
+  <div class="box">
+    <h2>Authorization result</h2>
+    <p>If authorization is successful, the URL contains a <code>code</code> parameter.</p>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    const error = params.get("error");
+
+    if (code) {
+      document.getElementById("result").innerText =
+        "Authorization code received. The n8n workflow will exchange this code for TikTok access tokens.";
+    } else if (error) {
+      document.getElementById("result").innerText =
+        "Authorization failed: " + error;
+    } else {
+      document.getElementById("result").innerText =
+        "No authorization code was found in the URL.";
+    }
+  </script>
+
+  <p><a href="/">Back to home</a></p>
+</body>
+</html>
