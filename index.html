@@ -2,71 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Starlink Group TikTok App</title>
+  <title>Starlink Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Starlink Group official website and TikTok integration portal.">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.6;
-      padding: 0 20px;
-      color: #111;
-    }
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.6; padding: 0 20px; color: #111; }
     h1, h2 { color: #111; }
-    .box {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-      background: #fff;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      background: #fe2c55;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
+    .box { border: 1px solid #ddd; border-radius: 12px; padding: 20px; margin: 20px 0; background: #fff; }
+    .btn { display: inline-block; padding: 12px 18px; background: #fe2c55; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
     a { color: #0b57d0; }
+    footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid #ddd; }
   </style>
 </head>
 <body>
-  <h1>Starlink Group TikTok App</h1>
+  <h1>Starlink Group</h1>
 
   <p>
-    Starlink Group TikTok App is a web-based automation tool used by authorized Starlink Group users
-    to connect their TikTok account and publish videos through n8n workflows.
+    Starlink Group is the official business website and automation portal for Starlink Group.
+    This website includes a TikTok integration that allows authorized users to connect their TikTok account
+    and publish approved video content through Starlink Group's backend automation workflows.
   </p>
 
   <div class="box">
     <h2>Connect TikTok Account</h2>
     <p>
-      Users sign in with TikTok Login Kit to authorize this app. After authorization, the app uses
-      TikTok Content Posting API to upload or publish videos to the authorized user's own TikTok profile.
+      Authorized users can sign in with TikTok Login Kit and grant permission for Starlink Group
+      to identify the connected TikTok account and publish user-approved videos using TikTok Content Posting API.
     </p>
 
-    <a class="btn" href="https://www.tiktok.com/v2/auth/authorize/?client_key=CLIENT_KEY_HIEN_TAI&response_type=code&scope=user.info.basic%2Cvideo.upload%2Cvideo.publish&redirect_uri=https%3A%2F%2Fwww.starlinkgroup.vn%2Fcallback.html&state=starlinkgroup_test">
+    <a class="btn" href="https://www.tiktok.com/v2/auth/authorize/?client_key=awrkdccynx8lp2el&response_type=code&scope=user.info.basic%2Cvideo.publish&redirect_uri=https%3A%2F%2Fwww.starlinkgroup.vn%2Fcallback.html&state=starlinkgroup_test">
       Connect with TikTok
     </a>
   </div>
 
   <div class="box">
-    <h2>How it works</h2>
+    <h2>How the TikTok integration works</h2>
     <ol>
-      <li>The user clicks “Connect with TikTok”.</li>
-      <li>The user authorizes Starlink Group TikTok App using TikTok Login Kit.</li>
+      <li>The authorized user clicks “Connect with TikTok”.</li>
+      <li>The user authorizes Starlink Group through TikTok Login Kit.</li>
       <li>TikTok redirects the user back to the configured redirect URI with an authorization code.</li>
-      <li>The backend or n8n workflow exchanges the code for access token, refresh token, and open_id.</li>
-      <li>The workflow uses TikTok Content Posting API to upload or publish videos for the authorized TikTok account.</li>
+      <li>The backend automation workflow exchanges the authorization code for TikTok access credentials.</li>
+      <li>The workflow publishes only user-approved video content to the authorized TikTok account.</li>
     </ol>
   </div>
 
-  <p>
+  <div class="box">
+    <h2>Contact</h2>
+    <p>
+      For questions about Starlink Group or the TikTok integration, contact:
+      <a href="mailto:mrthuyettx@gmail.com">mrthuyettx@gmail.com</a>.
+    </p>
+  </div>
+
+  <footer>
+    <a href="/privacy.html">Privacy Policy</a> |
     <a href="/terms.html">Terms of Service</a> |
-    <a href="/privacy.html">Privacy Policy</a>
-  </p>
+    <a href="mailto:mrthuyettx@gmail.com">Contact</a>
+  </footer>
 </body>
 </html>
